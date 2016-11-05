@@ -2,34 +2,35 @@ package by.litelife.litelife_timetable.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import by.litelife.litelife_timetable.R;
 
 /**
  * Created by Mikhail Kazyuchyts on 11/4/2016.
  */
 public class MainActivity extends Activity {
-    private Button buttonClick;
-    private TextView textView;
 
+    private Toolbar toolbar;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        buttonClick = (Button) findViewById(R.id.button);
-        textView = (TextView) findViewById(R.id.textView);
+        initToolbar();
+    }
 
-        buttonClick.setOnClickListener(new View.OnClickListener() {
+    private void initToolbar() {
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(R.string.app_name);
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
-            public void onClick(View view) {
-                textView.setText("Кликнул");
+            public boolean onMenuItemClick(MenuItem item) {
+                return false;
             }
         });
 
+        toolbar.inflateMenu(R.menu.menu);
     }
 }

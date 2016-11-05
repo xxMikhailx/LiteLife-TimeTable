@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">LiteLife-TimeTable</string>
+    <string name="app_name">LiteLife TimeTable</string>
+    <string name="choose_date_title">Choose date</string>
+    <string name="chose_subgroup_title">Chose subgroup</string>
 </resources>
