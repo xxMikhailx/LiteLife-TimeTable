@@ -2,4 +2,6 @@
     <string name="app_name">LiteLife TimeTable</string>
     <string name="choose_date_title">Choose date</string>
     <string name="chose_subgroup_title">Chose subgroup</string>
+
+    <string name="menu_item_tomorrow">Завтра</string>
 </resources>
