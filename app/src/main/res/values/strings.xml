@@ -4,4 +4,7 @@
     <string name="chose_subgroup_title">Chose subgroup</string>
 
     <string name="menu_item_tomorrow">Завтра</string>
+
+    <string name="view_navigation_open">Open</string>
+    <string name="view_navigation_close">Close</string>
 </resources>
